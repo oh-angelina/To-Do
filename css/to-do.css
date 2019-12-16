@@ -3,14 +3,36 @@ body {
 	padding: 0;
 	background-color: #cceb70; 
 }
-.title {
-	font-size: 2rem;
-	color: #eb8170; 
-}
-.list {
-	width: 50vw;
+.main {
+	width: 70vw;
 	margin: 0 auto; 
 }
-.collection-item {
+.title {
+	font-size: 6rem;
+	width: 100%;
+	text-align: center;
+	color: #eb8170;
+}
+input {
+	text-align: center;
+	font-size: 30px; 
+	width: 100%; 
+	border: none;
+	height: 4rem; 
+}
+.list {
+
+}
+.list-item {
 	color: #70ebae;
+	background: white;
+	padding: .2rem; 
+	margin: .5rem auto; 
+/*	display: inline;
+*/}
+.list-item:hover {
+	background: gray; 
+}
+.complete {
+	display: inline;
 }
