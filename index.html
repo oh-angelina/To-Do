@@ -11,21 +11,40 @@
 		<h1 class="title">to dos</h1>
 	</div>
 
-	<div id="input">
-		<input type="text" name="todo" placeholder="What's next?">
+	<div>
+		<input type="text" name="todo" placeholder="What's next?" id="input">
 	</div>
 
 	<div class="list">
+
 		<div class="list-item">
-			<button class="complete">x</button>
-			<p>Laundry</p>
-			<button class="remove">x</button>
-		</div>		
+
+			<label class="container"><p class="task">Laundry</p>
+				<input type="checkbox" name="complete"checked="checked">
+				<span class="checkmark"></span>
+			</label>
+
+			<button class="remove">x</button>	
+		</div>
+
 		<div class="list-item">
-			<p>Dishes</p>
-		</div>		
+
+			<label class="container"><p class="task">Dishes</p>
+				<input type="checkbox" name="complete">
+				<span class="checkmark"></span>
+			</label>
+
+			<button class="remove">x</button>	
+		</div>
+		
 		<div class="list-item">
-			<p>Item 3</p>
+
+			<label class="container"><p class="task">Cook dinner</p>
+				<input type="checkbox" name="complete">
+				<span class="checkmark"></span>
+			</label>
+
+			<button class="remove">x</button>	
 		</div>
 		  
 
@@ -33,7 +52,6 @@
 
 </div>
 	
-
             
 </body>
 </html>
