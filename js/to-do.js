@@ -42,7 +42,7 @@ document.addEventListener("keyup", function(event) {
 	}
 }); 
 
-addToDo("Laundry", 1, true, false,); 
+addToDo("Schedule Meeting", 1, true, false,); 
 addToDo("Do Laundry", 2, true, false,); 
 addToDo("Cook Dinner", 3, true, false,); 
 
