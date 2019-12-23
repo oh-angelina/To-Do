@@ -7,51 +7,58 @@
 <body>
 
 <div class="main">
-	<div>
+	<header>
 		<h1 class="title">to dos</h1>
-	</div>
+	</header>
 
 	<div>
 		<input type="text" name="todo" placeholder="What's next?" id="input">
-	</div>
+<!-- 		<button id="submit">=</button>
+ -->	</div>
 
-	<div class="list">
-
-		<div class="list-item">
+	<ul id="list">
+ 
+		<li class="list-item">
 
 			<label class="container"><p class="task">Laundry</p>
-				<input type="checkbox" name="complete"checked="checked">
+				<input type="checkbox" name="complete" checked="checked" job="complete">
 				<span class="checkmark"></span>
 			</label>
 
-			<button class="remove">x</button>	
-		</div>
+			<button class="remove" job="delete">x</button>	
+		</li>
 
-		<div class="list-item">
+		<li class="list-item">
 
 			<label class="container"><p class="task">Dishes</p>
-				<input type="checkbox" name="complete">
+				<input type="checkbox" name="complete" job="complete">
 				<span class="checkmark"></span>
 			</label>
 
-			<button class="remove">x</button>	
-		</div>
+			<button class="remove" job="delete">x</button>	
+		</li>
 		
-		<div class="list-item">
+		<li class="list-item">
 
 			<label class="container"><p class="task">Cook dinner</p>
-				<input type="checkbox" name="complete">
+				<input type="checkbox" name="complete" job="complete">
 				<span class="checkmark"></span>
 			</label>
 
-			<button class="remove">x</button>	
-		</div>
-		  
+			<button class="remove" job="delete">x</button>	
+		</li>
 
-	</div>
+
+		  
+	</ul>
+		
+		<div class="clear-list">
+			<a href="#" id="clear">clear list</a>
+		</div>
 
 </div>
 	
-            
+<script type="text/javascript" src="js/to-do.js"></script>>
+
 </body>
 </html>

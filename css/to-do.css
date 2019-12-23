@@ -1,7 +1,8 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #cceb70; 
+	background-color: #cceb70;  
+	font-family: cambria; 
 }
 .main {
 	width: 70vw;
@@ -21,11 +22,16 @@ body {
 	height: 4rem; 
 	background: #FFFFF0
 }
+#list {
+	margin: 0;
+	padding: 0;
+}
 .list-item {
 	color: #70ebae;
 	background: white;
 	padding: .2rem; 
 	margin: .5rem auto; 
+	font-size: 1.5rem; 
 	display: block;
 }
 .list-item:hover {
@@ -40,6 +46,10 @@ body {
 	text-align: center;
 	width: 2rem;
 	height: 2rem;
+	background: transparent; 
+	border: none;
+	font-size: 1.5rem; 
+	color: #eb9d70;
 /*	opacity: 0; 
 */}
 label p {
@@ -49,7 +59,6 @@ label p {
 /* The container */
 .container {
   position: relative;
-  font-size: 1.5rem;
 }
 
 /* Hide the browser's default checkbox */
@@ -59,7 +68,7 @@ label p {
   width: 0;
 }
 
-/* Create a custom checkbox */
+/* custom checkbox */
 .checkmark {
   position: absolute;
   top: 0;
@@ -104,4 +113,18 @@ label p {
   border: solid white;
   border-width: 0 3px 3px 0;
   transform: rotate(45deg);
+}
+.clear-list {
+	background: white;
+	padding: 1rem; 
+	font-size: 1.5rem;
+	text-align: right;
+}
+#clear {
+	text-decoration: none;
+	color: #eb9d70;
+}
+.checked {
+	color: gray;
+	text-decoration: line-through;
 }
