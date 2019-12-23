@@ -14,10 +14,11 @@ function addToDo(toDo, id, checked, trash) {
 	if(trash) {return; }
 
 	const text = `<li class ="list-item">
-					<label class = "container">
-					<p class = "task">${toDo}</p>
-					<input type="checkbox" name="complete" job="complete" id="${id}">
-					<span class="checkmark"></span>
+					<label class = "container" >
+					<input type="checkbox" name="complete" id="${id}">
+					<span class="checkmark" job="complete"></span>
+					<p class="task" >${toDo}</p>
+					
 					</label>
 
 					<button class="remove" job="delete" id="${id}">x</button>	
@@ -28,6 +29,7 @@ function addToDo(toDo, id, checked, trash) {
 	list.insertAdjacentHTML(position, text); 
 }
 
+// Triggers the addition of a new toDo when user pressure Enter button
 document.addEventListener("keyup", function(event) {
 	if(event.keyCode == 13) {
 		const toDo = input.value;
@@ -40,7 +42,9 @@ document.addEventListener("keyup", function(event) {
 	}
 }); 
 
-addToDo("sleep", 1, false, false,)
+addToDo("Laundry", 1, true, false,); 
+addToDo("Do Laundry", 2, true, false,); 
+addToDo("Cook Dinner", 3, true, false,); 
 
 // On click, update or remove function will run on list item
 list.addEventListener("click", function(event){
@@ -56,7 +60,7 @@ list.addEventListener("click", function(event){
 
 
 function completeToDo (element) {
-	element.classList.toggle("checked"); 
+	element.nextElementSibling.classList.toggle("checked"); 
 	//list[element.id].checked = list[element.id].checked ? true : false;
 
 }
@@ -67,6 +71,10 @@ function removeToDo (element) {
 }
 
 clear.addEventListener("click", function() {
-	localSorage.cler(); 
-	location.reload();
+	while(list.childElementCount >0) {
+    	list.firstElementChild.remove();
+	}
+
 });
+
+// Note the bug that does not strike through if checkbox is clicked
