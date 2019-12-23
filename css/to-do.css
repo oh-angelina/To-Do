@@ -125,6 +125,6 @@ label p {
 	color: #eb9d70;
 }
 .checked {
-	color: gray;
+	color: black;
 	text-decoration: line-through;
 }
